@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "elegante-classica";
+    src: url(font/elegante_classica.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url(Photo/plant.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    /* border: 2px solid orange; */
+    flex-wrap: wrap;
+}
+
+.section {
+    position: absolute;
+    top: 139px;
+    left: 129px;
+    width: 490px;
+    height: 320px;
+    padding: 5px;
+
+    /* border: 5px solid green; */
+}
+
+.title {
+    font-family: mermaid-flat;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.subtitle {
+    font-family: elegante-classica;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 0 5px;
+    text-indent: 37px;
+    line-height: 25px;
+    text-align: justify;
+    
+    /* border: 5px solid green; */
+}
+
+.con_btn .button {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* border: 2px solid green; */
+}
+
+.button a {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: elegante-classica;
+    right: 50px;
+    text-decoration: none;
+    padding: 12px 30px;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    background-color: transparent;
+    border: 2px solid white; 
+}
+
+.button a:hover {
+    /* text-decoration: underline; */
+    background-color: #14452f;
+    color: rgb(255, 255, 255);
+    border: 2px solid #14452f;  
+}
+
+
+
+
+/* @MEDIA'S HERE!!! */
+@media (max-width: 425px) {
+
+body {
+    background: url(Photo/plant-v.jpg) no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    /* border: 2px solid orange; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.section {
+    position: absolute;
+    left: auto;
+    top: auto;
+    width: 85vw;
+    height: auto;
+    padding: 20px;
+    background-color: #33333398;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 30px 7px rgba(172, 172, 172, 0.555);
+    border: 2px solid rgba(255, 255, 255, 0.377);
+}
+
+.title {
+    font-family: mermaid-flat;
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-family: elegante-classica;
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding: 0 5px;
+    text-indent: 37px;
+    line-height: 25px;
+    text-align: justify;
+    
+    /* border: 5px solid green; */
+}
+
+.con_btn .button {
+    width: 100%;
+    height: 70px;
+    margin: 15px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* border: 2px solid green; */
+}
+
+.button a {
+    font-size: 16px;
+    font-weight: 900;
+    font-family: elegante-classica;
+    position: absolute;
+    right: auto;
+    text-decoration: none;
+    padding: 12px 30px;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    background-color: transparent;
+    border: 2px solid white; 
+}
+
+.button a:hover {
+    /* text-decoration: underline; */
+    background-color: #14452f;
+    color: rgb(255, 255, 255);
+    border: 2px solid #14452f;  
+}
+
+}
